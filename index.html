@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>I din takt</title>
+<meta name="description" content="Korta, lugna filmer om skolan.">
+<link rel="preload" href="assets/lexend-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehållet</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><span class="logo" aria-hidden="true">🌿</span> I din takt</a></div></header>
+<main id="main" class="wrap">
+<h1>I din takt</h1>
+<p class="lead">Korta, lugna filmer om skolan. Titta i din egen takt, en del i taget, när du orkar. Det finns inga prov och inga poäng.</p>
+<section class="group"><h2>Skolämnen</h2><p>Matematik, svenska och engelska, förklarat steg för steg.</p><div class="grid"><a class="card" href="lektion/matematik-brak.html">
+<img src="videos/matematik-brak/matematik-brak-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🔢</span> Bråk</h3><p>Delar av en helhet: att förstå, jämföra och räkna med bråk.</p><p class="meta">7 min · 4 korta delar</p></div></a><a class="card" href="lektion/svenska-kallkritik.html">
+<img src="videos/svenska-kallkritik/svenska-kallkritik-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">📖</span> Källkritik</h3><p>Fyra frågor att ställa innan du tror på en text.</p><p class="meta">5 min · 4 korta delar</p></div></a><a class="card" href="lektion/engelska-past-simple.html">
+<img src="videos/engelska-past-simple/engelska-past-simple-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🌍</span> Past simple</h3><p>Berätta om igår på engelska.</p><p class="meta">5 min · 4 korta delar</p></div></a></div></section><section class="group"><h2>Mående och skolan</h2><p>När skolan känns tung. Lugna filmer med enkla idéer att prova.</p><div class="grid"><a class="card" href="lektion/maende-angest.html">
+<img src="videos/maende-angest/maende-angest-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🌿</span> Ångest och skolan</h3><p>Kroppens larm, ångestcirkeln och små steg.</p><p class="meta">6 min · 4 korta delar</p></div></a><a class="card" href="lektion/maende-ligga-efter.html">
+<img src="videos/maende-ligga-efter/maende-ligga-efter-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🌿</span> Att ligga efter</h3><p>När det känns som att berget är för stort.</p><p class="meta">5 min · 4 korta delar</p></div></a><a class="card" href="lektion/maende-autism.html">
+<img src="videos/maende-autism/maende-autism-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🌿</span> Autism och skolan</h3><p>När skolan tar mer energi än för andra.</p><p class="meta">6 min · 4 korta delar</p></div></a><a class="card" href="lektion/maende-adhd.html">
+<img src="videos/maende-adhd/maende-adhd-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🌿</span> ADHD och skolan</h3><p>När det är svårt att komma igång och hålla fokus.</p><p class="meta">7 min · 4 korta delar</p></div></a><a class="card" href="lektion/maende-mobbning.html">
+<img src="videos/maende-mobbning/maende-mobbning-hela.jpg" alt="" loading="lazy" width="720" height="405">
+<div class="card-body"><h3><span aria-hidden="true">🌿</span> Mobbning och skolan</h3><p>Det är aldrig ditt fel, och du kan få hjälp.</p><p class="meta">6 min · 4 korta delar</p></div></a></div></section>
+<section class="help" aria-labelledby="hjalp">
+<h2 id="hjalp">Behöver du prata med någon?</h2>
+<ul>
+<li><strong>BRIS</strong> (barn och unga): <a href="tel:116111">116 111</a>, telefon eller chatt. Gratis och anonymt.</li>
+<li><strong>1177</strong>: <a href="tel:1177">1177</a>, sjukvårdsrådgivning dygnet runt.</li>
+<li><strong>Mind Självmordslinjen</strong>: <a href="tel:90101">90101</a>, telefon och chatt dygnet runt.</li>
+<li><strong>Fara just nu:</strong> <a href="tel:112">112</a>.</li>
+<li>På skolan: mentor, kurator eller skolsköterska.</li>
+</ul>
+</section>
+</main>
+<footer class="wrap foot">
+<p>Filmerna är ett pågående arbete. Rösten är skapad med AI. De ersätter inte hjälp av en människa.</p>
+<p>Inga cookies och ingen spårning.</p>
+</footer>
+<script>// På smala, stående skärmar visas de korta delarna i stående format.
+(function () {
+  try {
+    var narrow = window.matchMedia("(max-width: 700px) and (orientation: portrait)").matches;
+    if (!narrow) return;
+    document.querySelectorAll("video[data-port]").forEach(function (v) {
+      v.src = v.getAttribute("data-port");
+      v.poster = v.getAttribute("data-poster-port");
+      v.classList.add("port");
+    });
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
